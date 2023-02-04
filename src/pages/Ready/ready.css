@@ -1,0 +1,37 @@
+.readyWrapper {
+    background: linear-gradient(48deg, rgba(87, 57, 214, 1) 66.5%, rgba(33, 232, 229, 1) 40.5%);
+    width: 428px;
+    height: 926px;
+}
+
+.ready-img {
+    padding-top: 133px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.readyWrapper p {
+    margin-top: 116px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: right;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.btnDone{
+    width: 276px;
+    height: 76px;
+    background-color: white;
+    color: black;
+    font-size: 48px;
+    font-weight: 900;
+    margin: 84px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

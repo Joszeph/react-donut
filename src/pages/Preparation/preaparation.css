@@ -1,0 +1,32 @@
+.prepWrapper {
+    background-color: #FFE84A;
+    width: 428px;
+    height: 926px;
+}
+
+.bg-img{
+    background-image: url('../../assets/sparkles.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 49%;
+    background-position-x: 19px;
+    background-position-y: -14px;
+    transform: rotate(237deg);
+    margin-bottom: 100px;
+}
+
+.bg-img img {
+    position: relative;
+    top: 69px;
+    left: 35px;
+    transform: rotate(122deg);
+}
+
+.prepWrapper p{
+font-weight: 900;
+font-size: 40px;
+line-height: 72px;
+text-align: center;
+color: #FFFFFF;
+}

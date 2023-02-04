@@ -1,0 +1,37 @@
+.menuWrapper {
+    background-color: #21E8E5;
+    width: 428px;
+    height: 926px;
+    padding-top: 20px;
+}
+
+.title-width-menu{
+    max-width: 304px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.menuContainer{
+    margin-top:56px;
+}
+
+.donutEl h3 {
+    color: white;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 38px;
+    text-align: right;
+    flex:1;
+}
+
+.donutEl{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 71px;
+}
+
+.donutEl img{
+    flex:1;
+}

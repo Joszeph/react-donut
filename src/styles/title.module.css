@@ -1,0 +1,36 @@
+.titles{
+    margin: 0 auto;
+}
+
+.titleOne {
+    color: white;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 37px;
+    text-align: right;  
+}
+
+.titleTwo {
+    color: white;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 72px;
+    text-align: center !important;
+}
+
+.titleTwoSmall{
+    color: white;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 37px;
+    text-align: right;  
+}
+
+.titleThree {
+    color: white;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 72px;
+    text-align: center !important;
+}
+
