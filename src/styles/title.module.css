@@ -1,4 +1,4 @@
-.titles{
+.titles {
     margin: 0 auto;
 }
 
@@ -7,7 +7,7 @@
     font-weight: 900;
     font-size: 48px;
     line-height: 37px;
-    text-align: right;  
+    text-align: right;
 }
 
 .titleTwo {
@@ -18,12 +18,12 @@
     text-align: center !important;
 }
 
-.titleTwoSmall{
+.titleTwoSmall {
     color: white;
     font-weight: 900;
     font-size: 48px;
     line-height: 38px;
-    text-align: right;  
+    text-align: right;
 }
 
 .titleThree {
@@ -33,4 +33,3 @@
     line-height: 72px;
     text-align: center !important;
 }
-

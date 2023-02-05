@@ -5,14 +5,14 @@
     padding-top: 20px;
 }
 
-.title-width-menu{
+.title-width-menu {
     max-width: 304px;
     margin: 0 auto;
     margin-top: 30px;
 }
 
-.menuContainer{
-    margin-top:56px;
+.menuContainer {
+    margin-top: 56px;
 }
 
 .donutEl h3 {
@@ -22,17 +22,17 @@
     font-size: 36px;
     line-height: 38px;
     text-align: right;
-    flex:1;
+    flex: 1;
 }
 
-.donutEl{
+.donutEl {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 71px;
 }
 
-.donutEl img{
-    flex:1;
-    filter: drop-shadow(2px 2px 11px #d675b1)
+.donutEl img {
+    flex: 1;
+    filter: drop-shadow(2px 2px 11px #d675b1);
 }

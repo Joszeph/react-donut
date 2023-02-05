@@ -15,7 +15,6 @@
     margin-bottom: 130px;
 }
 
-
 .donutsImg img:first-of-type {
     width: 254.93px;
     height: auto;
@@ -35,11 +34,10 @@
     right: -155px;
 }
 
-.title-width{
+.title-width {
     max-width: 373px !important;
     margin: 0 auto;
 }
-
 
 .btnStart {
     width: 276px;
@@ -59,4 +57,3 @@ a {
     text-decoration: none;
     color: black;
 }
-
