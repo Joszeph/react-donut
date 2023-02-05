@@ -2,10 +2,14 @@ import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 import Donut from "../../components/Donut";
+import Titles from "../../components/Titles";
 
 import "./preaparation.css";
 
 const Preparation = () => {
+
+  const title1 = "Preparing...";
+
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const data = params.get("data");
@@ -26,7 +30,7 @@ const Preparation = () => {
       <div className="bg-img">
         <Donut data={data} />
       </div>
-      <p>Preparing...</p>
+      <Titles title1={title1}/>
     </div>
   );
 };
