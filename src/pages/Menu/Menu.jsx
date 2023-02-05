@@ -1,82 +1,69 @@
-import React from "react";
+import { Link } from "react-router-dom";
+
 import "./menu.css";
-import Payment from '../Payment/Payment'
 
 import Donut from "../../components/Donut";
 import Titles from "../../components/Titles";
-import sky from "../../assets/sky_shaped.svg";
-import marble from "../../assets/marble_magic.svg";
-import blood from "../../assets/true_blood.svg";
-import unicorn from "../../assets/unicorn_dust.svg";
+import sky_shaped from "../../assets/sky_shaped.svg";
+import marble_magic from "../../assets/marble_magic.svg";
+import true_blood from "../../assets/true_blood.svg";
+import unicorn_dust from "../../assets/unicorn_dust.svg";
 
-const Menu = ({app}) => {
+const Menu = () => {
+
   const title1 = "The";
   const title2 = "MENU";
 
-  const donutSky = sky
-  const donutMarble = marble
-  const donutBlood = blood
-  const donutUnicorn = unicorn
+  const data = {
+    skyShaped: sky_shaped,
+    marbelMagic: marble_magic,
+    trueBlood: true_blood,
+    unicornDust: unicorn_dust,
+  };
 
-
-  const selectDonut = (dPath) => {
-    app.render(
-        <React.StrictMode>
-            <Payment app={app} donutPath={dPath} />
-        </React.StrictMode>
-    );
-};
 
   return (
     <div className="menuWrapper">
       <div className="title-width-menu">
-      <Titles title1={title1} title2={title2} />
+        <Titles title1={title1} title2={title2} />
       </div>
       <section className="menuContainer">
-      
-          <div className="donutEl"
-          onClick={()=>selectDonut(donutSky)}
-          >
+      <Link to={{ pathname: "/payment", search: `?sky_shaped=${data.skyShaped}` }}>
+          <div className="donutEl">
             <h3>
               SKY <br />
               SHAPED
             </h3>
-            <Donut donut={donutSky} path={donutSky}/>
+            <Donut data={data.skyShaped} />
           </div>
-      
-    
-          <div className="donutEl"
-          onClick={()=>selectDonut(donutMarble)}
-          >
+        </Link>
+        <Link to={{ pathname: "/payment", search: `?marble_magic=${data.marbelMagic}` }}>
+          <div className="donutEl">
             <h3>
               MARBLE <br />
               MAGIC
             </h3>
-            <Donut donut={donutMarble} path={donutMarble}/>
+            <Donut data={data.marbelMagic} />
           </div>
-   
-
-          <div className="donutEl"
-           onClick={()=>selectDonut(donutBlood)}
-          >
+        </Link>
+        <Link to={{ pathname: "/payment", search: `?true_blood=${data.trueBlood}` }} >
+          <div className="donutEl">
             <h3>
               TRUE <br />
               BLOOD
             </h3>
-            <Donut donut={donutBlood} path={donutBlood}/>
+            <Donut data={data.trueBlood} />
           </div>
- 
-    
-          <div className="donutEl"
-          onClick={()=>selectDonut(donutUnicorn)}
-          >
+        </Link>
+        <Link to={{ pathname: "/payment", search: `?unicorn_dust=${data.unicornDust}` }} >
+          <div className="donutEl">
             <h3>
               UNICORN <br />
               DUST
             </h3>
-            <Donut donut={donutUnicorn} path={donutUnicorn}/>
+            <Donut data={data.unicornDust} />
           </div>
-
+        </Link>
       </section>
     </div>
   );

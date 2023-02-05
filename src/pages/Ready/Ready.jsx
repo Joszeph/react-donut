@@ -1,14 +1,21 @@
 import  {Link}  from "react-router-dom";
+import { useLocation } from 'react-router-dom';
+
+import Donut from '../../components/Donut'
 
 import "./ready.css";
 
-import blood from "../../assets/true_blood.svg";
 
 const Ready = () => {
+
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const data = params.get("data");
+
   return (
     <div className="readyWrapper">
       <div className="ready-img">
-      <img src={blood} alt="" width={291.44} />
+      <Donut data={data}/>
       </div>
       <p>You can now come <br />and pick up <br /> your amazing Donut!</p>
       <div className="btnDone">

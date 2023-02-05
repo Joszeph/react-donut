@@ -8,13 +8,14 @@ import Ready from './pages/Ready/Ready'
 
 import './App.css';
 
+
 function App() {
   return (
     <div className="App">
       <Router>
         <Routes>
           <Route path="/" element={<Start />}/>
-          <Route path="/menu" element={<Menu />}/>
+          <Route path="/menu" element={<Menu />} />
           <Route path="/payment" element={<Payment />}/>
           <Route path="/preparation" element={<Preparation />}/>
           <Route path="/ready" element={<Ready />}/>

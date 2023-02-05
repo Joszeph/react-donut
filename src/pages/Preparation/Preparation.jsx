@@ -1,12 +1,31 @@
 import './preaparation.css'
 
-import blood from "../../assets/true_blood.svg";
+import {useEffect} from 'react'
+import {useLocation, useNavigate} from 'react-router-dom'
+
+import Donut from '../../components/Donut';
 
 const Preparation = () => {
+
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const data = params.get("data");
+
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    setTimeout(() => {
+      navigate({
+        pathname: "/ready", 
+        search: `?data=${data}` 
+      });
+    }, 5000);
+  }, [data, navigate]);
+
   return (
     <div className='prepWrapper'>
       <div className="bg-img">
-        <img src={blood} alt="" width={291.44}/>
+        <Donut data={data}/>
       </div>
       <p>Preparing...</p>
     </div>
