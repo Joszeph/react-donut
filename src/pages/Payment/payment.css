@@ -30,11 +30,13 @@
 .images img:first-of-type {
     position: relative;
     left: -134px;
-    top: 44px;
+    top: -6px;
+    filter: drop-shadow(14px 20px 8px #cf77ac);
 }
 
 .images img:last-of-type {
     position: relative;
-    left: 257px;
-    top: -78px;
+    left: 255px;
+    top: -93px;
+    filter: drop-shadow(14px 13px 8px #cf77ac);
 }
